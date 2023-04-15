@@ -1,6 +1,6 @@
 # Daily-Proverbs-bot
 
-This is a Twitter bot that tweets proverbs from the book ["Colloquial Proverbs"](https://www.hindawi.org/books/75241938/) by Ahmed Taymur Pasha. The bot reads the proverbs and their explanations from a Google Sheet and tweets them out in a threaded manner, with each chunk of the explanation being a reply to the previous tweet.
+This is a Twitter bot that tweets proverbs from the book [Colloquial Proverbs](https://www.hindawi.org/books/75241938/) by Ahmed Taymur Pasha الأمثال العامية - أحمد تيمور باشا. The bot reads the proverbs and their explanations from a Google Sheet and tweets them out in a threaded manner, with each chunk of the explanation being a reply to the previous tweet.
 
 ## Technologies Used
 
@@ -20,3 +20,8 @@ The bot reads the proverbs and their explanations from a Google Sheet and checks
 If the tweet has not been posted, the bot splits the explanation into chunks of 240 characters or less and tweets the proverb. The bot then replies to the proverb with the first chunk of the explanation. The remaining chunks of the explanation are tweeted as replies to the previous tweet.
 
 After the tweet has been posted, the bot updates the Google Sheet with the current date and time and changes the flag to indicate that the tweet has been posted. The bot then waits for 2 minutes before posting the next tweet.
+
+## Data Source
+
+The data for this project was obtained by web scraping the book
+[Colloquial Proverbs](https://www.hindawi.org/books/75241938/) by Ahmed Taymur Pasha, which is a public domain book available at www.hindawi.org. We acknowledge the author and publisher for making this valuable resource publicly accessible.
