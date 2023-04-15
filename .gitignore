@@ -4,9 +4,6 @@
 # .json file 
 *.json
 
-# .txt file
-*.txt
-
 #Web-scraping folder
 web-scraping/
 
