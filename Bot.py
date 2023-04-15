@@ -29,10 +29,10 @@ creds = ServiceAccountCredentials.from_json_keyfile_name(
 client = gspread.authorize(creds)
 
 # Open the Google Sheet and select the first worksheet
-sheet = client.open('testfile').worksheet('XYZ')
+sheet = client.open('TwitterBot2').worksheet('XYZ')
 
 # Open the "Posted" worksheet
-posted_sheet = client.open('testfile').worksheet('Posted')
+posted_sheet = client.open('TwitterBot2').worksheet('Posted')
 
 # Get all the values from the worksheet
 values = sheet.get_all_values()
@@ -84,4 +84,7 @@ for row in values:
     sheet.update_cell(row_index, 3, '🟩')
 
     # Wait for 2 minutes before posting the next tweet
-    time.sleep(120)
+    # time.sleep(120)
+
+    # wait for 2 hours before posting the next tweet
+    # time.sleep(7200)
