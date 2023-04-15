@@ -1,5 +1,5 @@
 # Description: Deletes all tweets from a Twitter account
-# The easiest way to do it while testing  :P (I don't recommend using this)
+# The easiest way to do it while testing :P (I don't recommend using this)
 
 import tweepy
 import os
